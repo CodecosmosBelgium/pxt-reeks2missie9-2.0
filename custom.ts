@@ -7,7 +7,7 @@ player.execute("/scriptevent cc:getId " + mobs.queryTarget((mobs.target(MY_AGENT
 namespace CodeCosmos {
 
     //% block="Raap gereedschap op"
-    export function collect_tools(): void {
+    export function collect_tool(): void {
         let localPlayer = mobs.target(TargetSelectorKind.LocalPlayer);
         let inspectedBlock = agent.inspect(AgentInspection.Block, FORWARD + DOWN);
 
