@@ -4,7 +4,8 @@
 ```blocks
 player.onChat("level1", function () {
     CodeCosmos.setup_level1()
-    
+      CodeCosmos.collect_tool()
+        
     }
 })
 
