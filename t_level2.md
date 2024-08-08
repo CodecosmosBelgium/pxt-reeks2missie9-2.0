@@ -4,7 +4,68 @@
 ```blocks
 player.onChat("level2", function () {
     CodeCosmos.setup_level2()
-    
+    for (let index = 0; index < 6; index++) {
+        agent.move(FORWARD, 1)
+        if (CodeCosmos.test_for_block_under_agent(GRASS) || CodeCosmos.test_for_block_under_agent(PODZOL)) {
+            CodeCosmos.place_tree()
+        } else {
+            CodeCosmos.place_bush()
+        }
+        agent.turn(RIGHT_TURN)
+        agent.move(FORWARD, 1)
+        if (CodeCosmos.test_for_block_under_agent(GRASS) || CodeCosmos.test_for_block_under_agent(PODZOL)) {
+            CodeCosmos.place_tree()
+        } else {
+            CodeCosmos.place_bush()
+        }
+        agent.turn(LEFT_TURN)
+    }
+    agent.turn(RIGHT_TURN)
+    for (let index = 0; index < 5; index++) {
+        agent.move(FORWARD, 1)
+        if (CodeCosmos.test_for_block_under_agent(GRASS) || CodeCosmos.test_for_block_under_agent(PODZOL)) {
+            CodeCosmos.place_tree()
+        } else {
+            CodeCosmos.place_bush()
+        }
+    }
+    for (let index = 0; index < 2; index++) {
+        agent.move(FORWARD, 1)
+        if (CodeCosmos.test_for_block_under_agent(GRASS) || CodeCosmos.test_for_block_under_agent(PODZOL)) {
+            CodeCosmos.place_tree()
+        } else {
+            CodeCosmos.place_bush()
+        }
+        agent.turn(LEFT_TURN)
+        agent.move(FORWARD, 1)
+        if (CodeCosmos.test_for_block_under_agent(GRASS) || CodeCosmos.test_for_block_under_agent(PODZOL)) {
+            CodeCosmos.place_tree()
+        } else {
+            CodeCosmos.place_bush()
+        }
+        agent.turn(RIGHT_TURN)
+    }
+    agent.move(FORWARD, 1)
+    if (CodeCosmos.test_for_block_under_agent(GRASS) || CodeCosmos.test_for_block_under_agent(PODZOL)) {
+        CodeCosmos.place_tree()
+    } else {
+        CodeCosmos.place_bush()
+    }
+    agent.turn(LEFT_TURN)
+    for (let index = 0; index < 5; index++) {
+        agent.move(FORWARD, 1)
+        if (CodeCosmos.test_for_block_under_agent(GRASS) || CodeCosmos.test_for_block_under_agent(PODZOL)) {
+            CodeCosmos.place_tree()
+        } else {
+            CodeCosmos.place_bush()
+        }
+    }
+    agent.turn(RIGHT_TURN)
+    agent.move(FORWARD, 1)
+    if (CodeCosmos.test_for_block_under_agent(GRASS) || CodeCosmos.test_for_block_under_agent(PODZOL)) {
+        CodeCosmos.place_tree()
+    } else {
+        CodeCosmos.place_bush()
     }
 })
 
@@ -13,10 +74,69 @@ player.onChat("level2", function () {
 ```template
 player.onChat("level2", function () {
     CodeCosmos.setup_level2()
-      if (CodeCosmos.test_for_block_under_agent(GRASSBLOCK) || CodeCosmos.test_for_block_under_agent(PODZOL)){
-          CodeCosmos.plant_tree();
-      }else{
-          CodeCosmos.plant_bush();
+    for (let index = 0; index < 6; index++) {
+        agent.move(FORWARD, 1)
+        if (CodeCosmos.test_for_block_under_agent(GRASS) || CodeCosmos.test_for_block_under_agent(PODZOL)) {
+            CodeCosmos.place_tree()
+        } else {
+            CodeCosmos.place_bush()
+        }
+        agent.turn(RIGHT_TURN)
+        agent.move(FORWARD, 1)
+        if (CodeCosmos.test_for_block_under_agent(GRASS) || CodeCosmos.test_for_block_under_agent(PODZOL)) {
+            CodeCosmos.place_tree()
+        } else {
+            CodeCosmos.place_bush()
+        }
+        agent.turn(LEFT_TURN)
+    }
+    agent.turn(RIGHT_TURN)
+    for (let index = 0; index < 5; index++) {
+        agent.move(FORWARD, 1)
+        if (CodeCosmos.test_for_block_under_agent(GRASS) || CodeCosmos.test_for_block_under_agent(PODZOL)) {
+            CodeCosmos.place_tree()
+        } else {
+            CodeCosmos.place_bush()
+        }
+    }
+    for (let index = 0; index < 2; index++) {
+        agent.move(FORWARD, 1)
+        if (CodeCosmos.test_for_block_under_agent(GRASS) || CodeCosmos.test_for_block_under_agent(PODZOL)) {
+            CodeCosmos.place_tree()
+        } else {
+            CodeCosmos.place_bush()
+        }
+        agent.turn(LEFT_TURN)
+        agent.move(FORWARD, 1)
+        if (CodeCosmos.test_for_block_under_agent(GRASS) || CodeCosmos.test_for_block_under_agent(PODZOL)) {
+            CodeCosmos.place_tree()
+        } else {
+            CodeCosmos.place_bush()
+        }
+        agent.turn(RIGHT_TURN)
+    }
+    agent.move(FORWARD, 1)
+    if (CodeCosmos.test_for_block_under_agent(GRASS) || CodeCosmos.test_for_block_under_agent(PODZOL)) {
+        CodeCosmos.place_tree()
+    } else {
+        CodeCosmos.place_bush()
+    }
+    agent.turn(LEFT_TURN)
+    for (let index = 0; index < 5; index++) {
+        agent.move(FORWARD, 1)
+        if (CodeCosmos.test_for_block_under_agent(GRASS) || CodeCosmos.test_for_block_under_agent(PODZOL)) {
+            CodeCosmos.place_tree()
+        } else {
+            CodeCosmos.place_bush()
+        }
+    }
+    agent.turn(RIGHT_TURN)
+    agent.move(FORWARD, 1)
+    if (CodeCosmos.test_for_block_under_agent(GRASS) || CodeCosmos.test_for_block_under_agent(PODZOL)) {
+        CodeCosmos.place_tree()
+    } else {
+        CodeCosmos.place_bush()
+    }
 })
 ```
 
