@@ -1,3 +1,20 @@
-player.onChat("run", function () {
-	
+player.onChat("level1", function () {
+    CodeCosmos.setup_level5()
+    for (let index = 0; index < 4; index++) {
+        agent.move(FORWARD, 2)
+        agent.turn(RIGHT_TURN)
+        agent.move(FORWARD, 3)
+        CodeCosmos.collect_tools()
+        agent.move(BACK, 1)
+        agent.turn(LEFT_TURN)
+    }
+    agent.move(FORWARD, 2)
+    agent.turn(RIGHT_TURN)
+    agent.move(FORWARD, 5)
+    agent.turn(RIGHT_TURN)
+    agent.move(FORWARD, 2)
+    CodeCosmos.collect_tools()
+    agent.move(BACK, 2)
+    agent.turn(LEFT_TURN)
+    agent.move(FORWARD, 1)
 })
