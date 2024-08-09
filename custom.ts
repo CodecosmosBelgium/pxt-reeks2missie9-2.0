@@ -9,27 +9,31 @@ namespace CodeCosmos {
     //% block="Raap gereedschap op"
     export function collect_tool(): void {
         let localPlayer = mobs.target(TargetSelectorKind.LocalPlayer);
-        let inspectedBlockInfront = agent.inspect(AgentInspection.Block, FORWARD);
-        let inspectedBlockDown = agent.inspect(AgentInspection.Block, FORWARD);
-        player.say("inspectedBlockInfront = " + inspectedBlockInfront);
-        player.say("inspectedBlockDown = " + inspectedBlockDown);
-        switch(inspectedBlockInfront){
+        let inspectedBlock = agent.inspect(AgentInspection.Block, DOWN);
+        switch(inspectedBlock){
             case YELLOW_WOOL:
                 mobs.give(localPlayer, YELLOW_WOOL, 1);
                 agent.destroy(FORWARD + DOWN);
-                player.say("tried to destory the block");
+                agent.setSlot(2);
+                agent.place(DOWN);
                 break;
             case RED_WOOL:
                 mobs.give(localPlayer, RED_WOOL, 1);
                 agent.destroy(FORWARD + DOWN);
+                agent.setSlot(2);
+                agent.place(DOWN);
                 break;
             case GREEN_WOOL:
                 mobs.give(localPlayer, GREEN_WOOL, 1);
                 agent.destroy(FORWARD + DOWN);
+                agent.setSlot(2);
+                agent.place(DOWN);
                 break;
             case BLUE_WOOL:
                 mobs.give(localPlayer, BLUE_WOOL, 1);
                 agent.destroy(FORWARD + DOWN);
+                agent.setSlot(2);
+                agent.place(DOWN);
                 break;
         }
     }
@@ -167,6 +171,7 @@ namespace CodeCosmos {
     //% block="Zet klaar"
     export function setup_level1(): void {
         agent.setItem(BLUE_ORCHID, 64, 1);
+        agent.setItem(STONE, 64, 2);
         agent.teleport(world(-73, 69, 272), WEST);
     }
 
