@@ -32,6 +32,16 @@ namespace CodeCosmos {
         }
     }
 
+    //% block="Geen ijzer block onder agent"
+    export function no_ironblock_under_agent(): boolean{
+        let inspectedBlock = agent.inspect(AgentInspection.Block, DOWN);
+        if(inspectedBlock == IRON_BLOCK){
+            return true;
+        }else{
+            return false;
+        }
+    }
+
     //% block="Raap pickaxe en diamant op"
     export function collect_pickaxe_and_diamond(): void {
         let localPlayer = mobs.target(TargetSelectorKind.LocalPlayer);
