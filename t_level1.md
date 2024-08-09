@@ -9,7 +9,7 @@ player.onChat("level1", function () {
         agent.turn(RIGHT_TURN)
         agent.move(FORWARD, 4)
         CodeCosmos.collect_tool()
-        agent.move(BACK, 1)
+        agent.move(BACK, 2)
         agent.turn(LEFT_TURN)
     }
     agent.move(FORWARD, 2)
@@ -33,7 +33,7 @@ player.onChat("level1", function () {
         agent.turn(RIGHT_TURN)
         agent.move(FORWARD, 4)
         CodeCosmos.collect_tool()
-        agent.move(BACK, 1)
+        agent.move(BACK, 2)
         agent.turn(LEFT_TURN)
     }
     agent.move(FORWARD, 2)
