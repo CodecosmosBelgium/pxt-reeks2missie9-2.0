@@ -9,9 +9,11 @@ namespace CodeCosmos {
     //% block="Raap gereedschap op"
     export function collect_tool(): void {
         let localPlayer = mobs.target(TargetSelectorKind.LocalPlayer);
-        let inspectedBlock = agent.inspect(AgentInspection.Block, FORWARD + DOWN);
-        player.say("inspectedBlock = " + {inspectedBlock});
-        switch(inspectedBlock){
+        let inspectedBlockInfront = agent.inspect(AgentInspection.Block, FORWARD);
+        let inspectedBlockDown = agent.inspect(AgentInspection.Block, FORWARD);
+        player.say("inspectedBlockInfront = " + inspectedBlockInfront);
+        player.say("inspectedBlockDown = " + inspectedBlockDown);
+        switch(inspectedBlockInfront){
             case YELLOW_WOOL:
                 mobs.give(localPlayer, YELLOW_WOOL, 1);
                 agent.destroy(FORWARD + DOWN);
