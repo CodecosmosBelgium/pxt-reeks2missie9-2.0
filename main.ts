@@ -113,9 +113,6 @@ player.onChat("level1", function () {
         CodeCosmos.collect_tool()
         for (let index = 0; index < 2; index++) {
             agent.move(BACK, 1)
-            if (CodeCosmos.test_for_block_under_agent(GRASS)) {
-                CodeCosmos.place_flower()
-            }
         }
         agent.turn(LEFT_TURN)
     }
