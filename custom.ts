@@ -13,25 +13,25 @@ namespace CodeCosmos {
         switch(inspectedBlock){
             case YELLOW_WOOL:
                 mobs.give(localPlayer, YELLOW_WOOL, 1);
-                agent.destroy(FORWARD + DOWN);
+                agent.destroy(DOWN);
                 agent.setSlot(2);
                 agent.place(DOWN);
                 break;
             case RED_WOOL:
                 mobs.give(localPlayer, RED_WOOL, 1);
-                agent.destroy(FORWARD + DOWN);
+                agent.destroy(DOWN);
                 agent.setSlot(2);
                 agent.place(DOWN);
                 break;
             case GREEN_WOOL:
                 mobs.give(localPlayer, GREEN_WOOL, 1);
-                agent.destroy(FORWARD + DOWN);
+                agent.destroy(DOWN);
                 agent.setSlot(2);
                 agent.place(DOWN);
                 break;
             case BLUE_WOOL:
                 mobs.give(localPlayer, BLUE_WOOL, 1);
-                agent.destroy(FORWARD + DOWN);
+                agent.destroy(DOWN);
                 agent.setSlot(2);
                 agent.place(DOWN);
                 break;
