@@ -14,18 +14,26 @@ namespace CodeCosmos {
             case YELLOW_WOOL:
                 mobs.give(localPlayer, YELLOW_WOOL, 1);
                 agent.destroy(DOWN);
+                agent.setSlot(2);
+                agent.place(DOWN);
                 break;
             case RED_WOOL:
                 mobs.give(localPlayer, RED_WOOL, 1);
                 agent.destroy(DOWN);
+                agent.setSlot(2);
+                agent.place(DOWN);
                 break;
             case GREEN_WOOL:
                 mobs.give(localPlayer, GREEN_WOOL, 1);
                 agent.destroy(DOWN);
+                agent.setSlot(2);
+                agent.place(DOWN);
                 break;
             case BLUE_WOOL:
                 mobs.give(localPlayer, BLUE_WOOL, 1);
                 agent.destroy(DOWN);
+                agent.setSlot(2);
+                agent.place(DOWN);
                 break;
         }
     }
@@ -174,6 +182,7 @@ namespace CodeCosmos {
     //% block="Zet klaar"
     export function setup_level1(): void {
         agent.setItem(BLUE_ORCHID, 64, 1);
+        agent.setItem(STONE, 64, 2);
         agent.teleport(world(-73, 69, 272), WEST);
     }
 
