@@ -76,6 +76,17 @@ namespace CodeCosmos {
         }
     }
 
+    //% block="Bamboo block naast agent"
+    export function next_to_bamboo_block(): boolean {
+        let inspectedLeftBlock = agent.inspect(AgentInspection.Block, LEFT);
+        let inspectedRightBlock = agent.inspect(AgentInspection.Block, RIGHT);
+        if (inspectedLeftBlock == BLOCK_OF_BAMBOO || inspectedRightBlock == BLOCK_OF_BAMBOO) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+
     //% block="Struik naast agent"
     export function next_to_bush(): boolean {
         let inspectedLeftBlock = agent.inspect(AgentInspection.Block, LEFT);
