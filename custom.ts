@@ -10,11 +10,12 @@ namespace CodeCosmos {
     export function collect_tool(): void {
         let localPlayer = mobs.target(TargetSelectorKind.LocalPlayer);
         let inspectedBlock = agent.inspect(AgentInspection.Block, FORWARD + DOWN);
-
+        player.say("inspectedBlock = " + {inspectedBlock});
         switch(inspectedBlock){
             case YELLOW_WOOL:
                 mobs.give(localPlayer, YELLOW_WOOL, 1);
                 agent.destroy(FORWARD + DOWN);
+                player.say("tried to destory the block");
                 break;
             case RED_WOOL:
                 mobs.give(localPlayer, RED_WOOL, 1);
