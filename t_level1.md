@@ -5,22 +5,41 @@
 player.onChat("level1", function () {
     CodeCosmos.setup_level1()
     for (let index = 0; index < 4; index++) {
-        agent.move(FORWARD, 2)
+        for (let index = 0; index < 2; index++) {
+            agent.move(FORWARD, 1)
+            if (CodeCosmos.test_for_block_under_agent(GRASS)) {
+                CodeCosmos.place_flower()
+            }
+        }
         agent.turn(RIGHT_TURN)
-        agent.move(FORWARD, 4)
+        for (let index = 0; index < 4; index++) {
+            agent.move(FORWARD, 1)
+            if (CodeCosmos.test_for_block_under_agent(GRASS)) {
+                CodeCosmos.place_flower()
+            }
+        }
         CodeCosmos.collect_tool()
-        agent.move(BACK, 2)
+        for (let index = 0; index < 2; index++) {
+            agent.move(BACK, 1)
+            if (CodeCosmos.test_for_block_under_agent(GRASS)) {
+                CodeCosmos.place_flower()
+            }
+        }
         agent.turn(LEFT_TURN)
     }
-    agent.move(FORWARD, 2)
+    for (let index = 0; index < 2; index++) {
+        agent.move(FORWARD, 1)
+        if (CodeCosmos.test_for_block_under_agent(GRASS)) {
+            CodeCosmos.place_flower()
+        }
+    }
     agent.turn(RIGHT_TURN)
-    agent.move(FORWARD, 5)
-    agent.turn(RIGHT_TURN)
-    agent.move(FORWARD, 3)
-    CodeCosmos.collect_tool()
-    agent.move(BACK, 3)
-    agent.turn(LEFT_TURN)
-    agent.move(FORWARD, 1)
+    for (let index = 0; index < 6; index++) {
+        agent.move(FORWARD, 1)
+        if (CodeCosmos.test_for_block_under_agent(GRASS)) {
+            CodeCosmos.place_flower()
+        }
+    }
 })
 
 ```
@@ -29,22 +48,41 @@ player.onChat("level1", function () {
 player.onChat("level1", function () {
     CodeCosmos.setup_level1()
     for (let index = 0; index < 4; index++) {
-        agent.move(FORWARD, 2)
+        for (let index = 0; index < 2; index++) {
+            agent.move(FORWARD, 1)
+            if (CodeCosmos.test_for_block_under_agent(GRASS)) {
+                CodeCosmos.place_flower()
+            }
+        }
         agent.turn(RIGHT_TURN)
-        agent.move(FORWARD, 4)
+        for (let index = 0; index < 4; index++) {
+            agent.move(FORWARD, 1)
+            if (CodeCosmos.test_for_block_under_agent(GRASS)) {
+                CodeCosmos.place_flower()
+            }
+        }
         CodeCosmos.collect_tool()
-        agent.move(BACK, 2)
+        for (let index = 0; index < 2; index++) {
+            agent.move(BACK, 1)
+            if (CodeCosmos.test_for_block_under_agent(GRASS)) {
+                CodeCosmos.place_flower()
+            }
+        }
         agent.turn(LEFT_TURN)
     }
-    agent.move(FORWARD, 2)
+    for (let index = 0; index < 2; index++) {
+        agent.move(FORWARD, 1)
+        if (CodeCosmos.test_for_block_under_agent(GRASS)) {
+            CodeCosmos.place_flower()
+        }
+    }
     agent.turn(RIGHT_TURN)
-    agent.move(FORWARD, 5)
-    agent.turn(RIGHT_TURN)
-    agent.move(FORWARD, 3)
-    CodeCosmos.collect_tool()
-    agent.move(BACK, 3)
-    agent.turn(LEFT_TURN)
-    agent.move(FORWARD, 1)
+    for (let index = 0; index < 6; index++) {
+        agent.move(FORWARD, 1)
+        if (CodeCosmos.test_for_block_under_agent(GRASS)) {
+            CodeCosmos.place_flower()
+        }
+    }
 })
 ```
 
