@@ -82,7 +82,7 @@ namespace CodeCosmos {
     export function next_to_bush(): boolean {
         let inspectedLeftBlock = agent.inspect(AgentInspection.Block, LEFT);
         let inspectedRightBlock = agent.inspect(AgentInspection.Block, RIGHT);
-        if(inspectedLeftBlock == SWEET_BERRIES || inspectedRightBlock == SWEET_BERRIES){
+        if(inspectedLeftBlock == AZALEA || inspectedRightBlock == AZALEA){
             return true
         }else{
             return false;
