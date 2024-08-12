@@ -95,6 +95,8 @@ namespace CodeCosmos {
         let inspectedRightBlock = agent.inspect(AgentInspection.Block, RIGHT);
         if (inspectedLeftBlock == LOG_SPRUCE || inspectedRightBlock == LOG_SPRUCE) {
             return true
+            let localPlayer = mobs.target(TargetSelectorKind.LocalPlayer);
+            mobs.give(localPlayer, inspectedLeftBlock, 1);
         } else {
             return false;
         }
