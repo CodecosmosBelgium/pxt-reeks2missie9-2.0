@@ -33,7 +33,7 @@ namespace CodeCosmos {
     //% block="Geen ijzer block onder agent"
     export function no_ironblock_under_agent(): boolean{
         let inspectedBlock = agent.inspect(AgentInspection.Block, DOWN);
-        if(inspectedBlock == IRON_BLOCK){
+        if(inspectedBlock != IRON_BLOCK){
             return true;
         }else{
             return false;
