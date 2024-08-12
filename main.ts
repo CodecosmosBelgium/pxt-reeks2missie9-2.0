@@ -45,7 +45,7 @@ player.onChat("level2", function () {
 })
 player.onChat("level4", function () {
     CodeCosmos.setup_level4()
-    for (let index = 0; index < 9; index++) {
+    for (let index = 0; index < 4; index++) {
         agent.move(FORWARD, 1)
         if (CodeCosmos.no_ironblock_under_agent() && CodeCosmos.next_to_tree()) {
             CodeCosmos.spawn_parrot()
@@ -61,6 +61,7 @@ player.onChat("level4", function () {
             }
         }
     }
+    agent.turn(LEFT_TURN)
     for (let index = 0; index < 7; index++) {
         agent.move(FORWARD, 1)
         if (CodeCosmos.no_ironblock_under_agent() && CodeCosmos.next_to_tree()) {
@@ -77,7 +78,7 @@ player.onChat("level4", function () {
             }
         }
     }
-    for (let index = 0; index < 4; index++) {
+    for (let index = 0; index < 9; index++) {
         agent.move(FORWARD, 1)
         if (CodeCosmos.no_ironblock_under_agent() && CodeCosmos.next_to_tree()) {
             CodeCosmos.spawn_parrot()
