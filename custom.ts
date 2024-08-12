@@ -47,6 +47,7 @@ namespace CodeCosmos {
 
         if (inspectedBlock == PURPLE_WOOL) {
             mobs.give(localPlayer, PURPLE_WOOL, 1);
+            agent.destroy(DOWN);
         }
     }
 
