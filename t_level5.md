@@ -48,7 +48,6 @@ player.onChat("level5", function () {
         }
     }
 })
-
 ```
 
 ```template
