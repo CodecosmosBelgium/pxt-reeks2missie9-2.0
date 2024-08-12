@@ -43,12 +43,10 @@ namespace CodeCosmos {
     //% block="Raap pickaxe en diamant op"
     export function collect_pickaxe_and_diamond(): void {
         let localPlayer = mobs.target(TargetSelectorKind.LocalPlayer);
-        let inspectedBlock = agent.inspect(AgentInspection.Block, DOWN);
-
-        if (inspectedBlock == PURPLE_WOOL) {
-            mobs.give(localPlayer, PURPLE_WOOL, 1);
-            agent.destroy(DOWN);
-        }
+        mobs.give(localPlayer, PURPLE_WOOL, 1);
+        agent.destroy(DOWN);
+        agent.setSlot(4);
+        agent.place(DOWN);
     }
 
     //% block="is blok %block=block onder agent"
@@ -206,6 +204,7 @@ namespace CodeCosmos {
         agent.setItem(SPAWN_PANDA, 64, 1);
         agent.setItem(SPAWN_PARROT, 64, 2);
         agent.setItem(PODZOL, 64, 3);
+        agent.setItem(STONE, 64, 4);
         agent.teleport(world(-226, 65, 244), NORTH);
     }
 }
