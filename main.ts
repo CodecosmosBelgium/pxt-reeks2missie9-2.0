@@ -178,6 +178,7 @@ player.onChat("level3", function () {
     }
 })
 player.onChat("level5", function () {
+    CodeCosmos.setup_level5()
     for (let index = 0; index < 2; index++) {
         agent.move(FORWARD, 1)
         if (CodeCosmos.test_for_block_under_agent(STONE)) {
