@@ -43,11 +43,10 @@ namespace CodeCosmos {
     //% block="Raap pickaxe en diamant op"
     export function collect_pickaxe_and_diamond(): void {
         let localPlayer = mobs.target(TargetSelectorKind.LocalPlayer);
-        let inspectedBlock = agent.inspect(AgentInspection.Block, FORWARD + DOWN);
+        let inspectedBlock = agent.inspect(AgentInspection.Block, DOWN);
 
         if (inspectedBlock == PURPLE_WOOL) {
-            mobs.give(localPlayer, DIAMOND, 1);
-            mobs.give(localPlayer, IRON_PICKAXE, 1);
+            mobs.give(localPlayer, PURPLE_WOOL, 1);
         }
     }
 
@@ -157,15 +156,15 @@ namespace CodeCosmos {
         agent.place(DOWN);
     }
 
-    //% block="Plaats cobblestone"
+    //% block="Plaats keisteen"
     export function place_cobblestone(): void {
         agent.destroy(DOWN);
         agent.setSlot(3);
         agent.place(DOWN);
     }
 
-    //% block="Plaats grasblok"
-    export function place_grassblock(): void {
+    //% block="Plaats podzol"
+    export function place_podzol(): void {
         agent.destroy(DOWN);
         agent.setSlot(3);
         agent.place(DOWN);
@@ -203,7 +202,7 @@ namespace CodeCosmos {
     export function setup_level5(): void {
         agent.setItem(SPAWN_PANDA, 64, 1);
         agent.setItem(SPAWN_PARROT, 64, 2);
-        agent.setItem(GRASS, 64, 3);
+        agent.setItem(PODZOL, 64, 3);
         agent.teleport(world(-226, 65, 244), NORTH);
     }
 }
