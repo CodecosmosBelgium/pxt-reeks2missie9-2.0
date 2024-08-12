@@ -6,7 +6,7 @@ player.onChat("level5", function () {
     for (let index = 0; index < 2; index++) {
         agent.move(FORWARD, 1)
         if (CodeCosmos.test_for_block_under_agent(STONE)) {
-            CodeCosmos.place_grassblock()
+            CodeCosmos.place_podzol()
         } else if (CodeCosmos.test_for_block_under_agent(SAND)) {
             CodeCosmos.spawn_parrot()
         } else if (CodeCosmos.test_for_block_under_agent(GRASS) && CodeCosmos.next_to_bamboo_block()) {
@@ -17,7 +17,7 @@ player.onChat("level5", function () {
     for (let index = 0; index < 9; index++) {
         agent.move(FORWARD, 1)
         if (CodeCosmos.test_for_block_under_agent(STONE)) {
-            CodeCosmos.place_grassblock()
+            CodeCosmos.place_podzol()
         } else if (CodeCosmos.test_for_block_under_agent(SAND)) {
             CodeCosmos.spawn_parrot()
         } else if (CodeCosmos.test_for_block_under_agent(GRASS) && CodeCosmos.next_to_bamboo_block()) {
@@ -28,7 +28,7 @@ player.onChat("level5", function () {
     for (let index = 0; index < 13; index++) {
         agent.move(FORWARD, 1)
         if (CodeCosmos.test_for_block_under_agent(STONE)) {
-            CodeCosmos.place_grassblock()
+            CodeCosmos.place_podzol()
         } else if (CodeCosmos.test_for_block_under_agent(SAND)) {
             CodeCosmos.spawn_parrot()
         } else if (CodeCosmos.test_for_block_under_agent(GRASS) && CodeCosmos.next_to_bamboo_block()) {
@@ -39,7 +39,7 @@ player.onChat("level5", function () {
     for (let index = 0; index < 9; index++) {
         agent.move(FORWARD, 1)
         if (CodeCosmos.test_for_block_under_agent(STONE)) {
-            CodeCosmos.place_grassblock()
+            CodeCosmos.place_podzol()
         } else if (CodeCosmos.test_for_block_under_agent(SAND)) {
             CodeCosmos.spawn_parrot()
         } else if (CodeCosmos.test_for_block_under_agent(GRASS) && CodeCosmos.next_to_bamboo_block()) {
@@ -55,7 +55,7 @@ player.onChat("level5", function () {
     for (let index = 0; index < 2; index++) {
         agent.move(FORWARD, 1)
         if (CodeCosmos.test_for_block_under_agent(STONE)) {
-            CodeCosmos.place_grassblock()
+            CodeCosmos.place_podzol()
         } else if (CodeCosmos.test_for_block_under_agent(SAND)) {
             CodeCosmos.spawn_parrot()
         } else if (CodeCosmos.test_for_block_under_agent(GRASS) && CodeCosmos.next_to_bamboo_block()) {
@@ -66,7 +66,7 @@ player.onChat("level5", function () {
     for (let index = 0; index < 9; index++) {
         agent.move(FORWARD, 1)
         if (CodeCosmos.test_for_block_under_agent(STONE)) {
-            CodeCosmos.place_grassblock()
+            CodeCosmos.place_podzol()
         } else if (CodeCosmos.test_for_block_under_agent(SAND)) {
             CodeCosmos.spawn_parrot()
         } else if (CodeCosmos.test_for_block_under_agent(GRASS) && CodeCosmos.next_to_bamboo_block()) {
@@ -77,7 +77,7 @@ player.onChat("level5", function () {
     for (let index = 0; index < 13; index++) {
         agent.move(FORWARD, 1)
         if (CodeCosmos.test_for_block_under_agent(STONE)) {
-            CodeCosmos.place_grassblock()
+            CodeCosmos.place_podzol()
         } else if (CodeCosmos.test_for_block_under_agent(SAND)) {
             CodeCosmos.spawn_parrot()
         } else if (CodeCosmos.test_for_block_under_agent(GRASS) && CodeCosmos.next_to_bamboo_block()) {
@@ -88,7 +88,7 @@ player.onChat("level5", function () {
     for (let index = 0; index < 9; index++) {
         agent.move(FORWARD, 1)
         if (CodeCosmos.test_for_block_under_agent(STONE)) {
-            CodeCosmos.place_grassblock()
+            CodeCosmos.place_podzol()
         } else if (CodeCosmos.test_for_block_under_agent(SAND)) {
             CodeCosmos.spawn_parrot()
         } else if (CodeCosmos.test_for_block_under_agent(GRASS) && CodeCosmos.next_to_bamboo_block()) {
