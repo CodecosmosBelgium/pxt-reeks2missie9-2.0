@@ -14,18 +14,22 @@ namespace CodeCosmos {
             case YELLOW_WOOL:
                 mobs.give(localPlayer, YELLOW_WOOL, 1);
                 agent.destroy(DOWN);
+                agent.collect(YELLOW_WOOL);
                 break;
             case RED_WOOL:
                 mobs.give(localPlayer, RED_WOOL, 1);
                 agent.destroy(DOWN);
+                agent.collect(RED_WOOL);
                 break;
             case GREEN_WOOL:
                 mobs.give(localPlayer, GREEN_WOOL, 1);
                 agent.destroy(DOWN);
+                agent.collect(GREEN_WOOL);
                 break;
             case BLUE_WOOL:
                 mobs.give(localPlayer, BLUE_WOOL, 1);
                 agent.destroy(DOWN);
+                agent.collect(BLUE_WOOL);
                 break;
         }
     }
@@ -45,6 +49,7 @@ namespace CodeCosmos {
         let localPlayer = mobs.target(TargetSelectorKind.LocalPlayer);
         mobs.give(localPlayer, PURPLE_WOOL, 1);
         agent.destroy(DOWN);
+        agent.collect(PURPLE_WOOL);
         agent.setSlot(4);
         agent.place(DOWN);
     }
@@ -160,6 +165,7 @@ namespace CodeCosmos {
     //% block="Plaats keisteen"
     export function place_cobblestone(): void {
         agent.destroy(DOWN);
+        agent.collect(MAGMA_BLOCK);
         agent.setSlot(3);
         agent.place(DOWN);
     }
@@ -167,6 +173,7 @@ namespace CodeCosmos {
     //% block="Plaats podzol"
     export function place_podzol(): void {
         agent.destroy(DOWN);
+        agent.collect(COBBLESTONE);
         agent.setSlot(3);
         agent.place(DOWN);
     }
