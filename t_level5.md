@@ -25,7 +25,7 @@ player.onChat("level5", function () {
             CodeCosmos.spawn_parrot()
         } else if (CodeCosmos.test_for_block_under_agent(GRASS) && CodeCosmos.next_to_bamboo_block()) {
             CodeCosmos.spawn_panda()
-        } else if (CodeCosmos.test_for_block_under_agent(PURPLE_WOOL)) {
+        } else if (CodeCosmos.pickaxe_and_diamond_under_agent()) {
             CodeCosmos.collect_pickaxe_and_diamond()
         }
     }
@@ -38,7 +38,7 @@ player.onChat("level5", function () {
             CodeCosmos.spawn_parrot()
         } else if (CodeCosmos.test_for_block_under_agent(GRASS) && CodeCosmos.next_to_bamboo_block()) {
             CodeCosmos.spawn_panda()
-        } else if (CodeCosmos.test_for_block_under_agent(PURPLE_WOOL)) {
+        } else if (CodeCosmos.pickaxe_and_diamond_under_agent()) {
             CodeCosmos.collect_pickaxe_and_diamond()
         }
     }
@@ -51,7 +51,7 @@ player.onChat("level5", function () {
             CodeCosmos.spawn_parrot()
         } else if (CodeCosmos.test_for_block_under_agent(GRASS) && CodeCosmos.next_to_bamboo_block()) {
             CodeCosmos.spawn_panda()
-        } else if (CodeCosmos.test_for_block_under_agent(PURPLE_WOOL)) {
+        } else if (CodeCosmos.pickaxe_and_diamond_under_agent()) {
             CodeCosmos.collect_pickaxe_and_diamond()
         }
     }
@@ -82,7 +82,7 @@ player.onChat("level5", function () {
             CodeCosmos.spawn_parrot()
         } else if (CodeCosmos.test_for_block_under_agent(GRASS) && CodeCosmos.next_to_bamboo_block()) {
             CodeCosmos.spawn_panda()
-        } else if (CodeCosmos.test_for_block_under_agent(PURPLE_WOOL)) {
+        } else if (CodeCosmos.pickaxe_and_diamond_under_agent()) {
             CodeCosmos.collect_pickaxe_and_diamond()
         }
     }
@@ -95,7 +95,7 @@ player.onChat("level5", function () {
             CodeCosmos.spawn_parrot()
         } else if (CodeCosmos.test_for_block_under_agent(GRASS) && CodeCosmos.next_to_bamboo_block()) {
             CodeCosmos.spawn_panda()
-        } else if (CodeCosmos.test_for_block_under_agent(PURPLE_WOOL)) {
+        } else if (CodeCosmos.pickaxe_and_diamond_under_agent()) {
             CodeCosmos.collect_pickaxe_and_diamond()
         }
     }
@@ -108,7 +108,7 @@ player.onChat("level5", function () {
             CodeCosmos.spawn_parrot()
         } else if (CodeCosmos.test_for_block_under_agent(GRASS) && CodeCosmos.next_to_bamboo_block()) {
             CodeCosmos.spawn_panda()
-        } else if (CodeCosmos.test_for_block_under_agent(PURPLE_WOOL)) {
+        } else if (CodeCosmos.pickaxe_and_diamond_under_agent()) {
             CodeCosmos.collect_pickaxe_and_diamond()
         }
     }
