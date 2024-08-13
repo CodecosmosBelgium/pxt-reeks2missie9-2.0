@@ -57,11 +57,12 @@ namespace CodeCosmos {
     //% block="Raap pickaxe en diamant op"
     export function collect_pickaxe_and_diamond(): void {
         let localPlayer = mobs.target(TargetSelectorKind.LocalPlayer);
-        mobs.give(localPlayer, PURPLE_WOOL, 1);
         agent.destroy(DOWN);
-        agent.collect(PURPLE_WOOL);
         agent.setSlot(4);
         agent.place(DOWN);
+        agent.collect(PURPLE_WOOL);
+        mobs.give(localPlayer, IRON_PICKAXE, 1);
+        mobs.give(localPlayer, DIAMOND, 1);
     }
 
     //% block="is blok %block=block onder agent"
