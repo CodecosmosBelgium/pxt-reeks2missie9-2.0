@@ -22,12 +22,12 @@ namespace CodeCosmos {
                 agent.collect(RED_WOOL);
                 break;
             case GREEN_WOOL:
-                mobs.give(localPlayer, GREEN_WOOL, 1);
+                mobs.give(localPlayer, IRON_SHOVEL, 1);
                 agent.destroy(DOWN);
                 agent.collect(GREEN_WOOL);
                 break;
             case BLUE_WOOL:
-                mobs.give(localPlayer, BLUE_WOOL, 1);
+                mobs.give(localPlayer, IRON_HOE, 1);
                 agent.destroy(DOWN);
                 agent.collect(BLUE_WOOL);
                 break;
