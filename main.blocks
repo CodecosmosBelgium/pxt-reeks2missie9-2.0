@@ -1,4 +1,1 @@
-<xml xmlns="http://www.w3.org/1999/xhtml">
-    <variables></variables>
-    <block type="pxt-on-start" x="0" y="0"></block>
-  </xml>
+<xml xmlns="https://developers.google.com/blockly/xml"><block type="pxt-on-start" id="aaE~aElGiD[K++}#@qt!" x="0" y="0"></block><block type="minecraftOnChat" id="V/*KYeNFr.w?,MO@PlFL" x="205" y="0"><mutation xmlns="http://www.w3.org/1999/xhtml" numargs="0"></mutation><value name="command"><shadow type="text" id="Z:=sTKniJy4@=T}*]s?A"><field name="TEXT">run</field></shadow></value></block></xml>
