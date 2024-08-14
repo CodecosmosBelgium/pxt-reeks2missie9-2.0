@@ -1,5 +1,5 @@
 player.onChat("level2", function () {
-    CodeCosmos.setup_level2()
+    // CodeCosmos.setup_level2()
     for (let index = 0; index < 5; index++) {
         agent.move(FORWARD, 1)
         if (CodeCosmos.test_for_block_under_agent(GRASS) || CodeCosmos.test_for_block_under_agent(PODZOL)) {
@@ -44,7 +44,7 @@ player.onChat("level2", function () {
     }
 })
 player.onChat("level4", function () {
-    CodeCosmos.setup_level4()
+    // CodeCosmos.setup_level4()
     for (let index = 0; index < 8; index++) {
         agent.move(FORWARD, 1)
         if (CodeCosmos.no_ironblock_under_agent() && CodeCosmos.next_to_tree()) {
@@ -80,7 +80,7 @@ player.onChat("level4", function () {
     }
 })
 player.onChat("level1", function () {
-    CodeCosmos.setup_level1()
+    // CodeCosmos.setup_level1()
     for (let index = 0; index < 4; index++) {
         for (let index = 0; index < 2; index++) {
             agent.move(FORWARD, 1)
@@ -95,7 +95,7 @@ player.onChat("level1", function () {
                 CodeCosmos.place_flower()
             }
         }
-        CodeCosmos.collect_tool()
+        // CodeCosmos.collect_tool()
         for (let index = 0; index < 2; index++) {
             agent.move(BACK, 1)
         }
@@ -116,7 +116,7 @@ player.onChat("level1", function () {
     }
 })
 player.onChat("level3", function () {
-    CodeCosmos.setup_level3()
+    // CodeCosmos.setup_level3()
     for (let index = 0; index < 6; index++) {
         agent.move(FORWARD, 1)
         if (CodeCosmos.test_for_block_under_agent(GRASS) && CodeCosmos.next_to_bamboo_plant()) {
@@ -162,9 +162,11 @@ player.onChat("level3", function () {
     }
 })
 player.onChat("level5", function () {
-    CodeCosmos.setup_level5()
+    // CodeCosmos.setup_level5()
     for (let index = 0; index < 2; index++) {
         agent.move(FORWARD, 1)
+        // } else if (CodeCosmos.pickaxe_and_diamond_under_agent()) {
+        // CodeCosmos.collect_pickaxe_and_diamond()
         if (CodeCosmos.test_for_block_under_agent(STONE)) {
             CodeCosmos.place_podzol()
         } else if (CodeCosmos.test_for_block_under_agent(SAND)) {
@@ -178,6 +180,8 @@ player.onChat("level5", function () {
     agent.turn(RIGHT_TURN)
     for (let index = 0; index < 9; index++) {
         agent.move(FORWARD, 1)
+        // } else if (CodeCosmos.pickaxe_and_diamond_under_agent()) {
+        // CodeCosmos.collect_pickaxe_and_diamond()
         if (CodeCosmos.test_for_block_under_agent(STONE)) {
             CodeCosmos.place_podzol()
         } else if (CodeCosmos.test_for_block_under_agent(SAND)) {
@@ -191,6 +195,8 @@ player.onChat("level5", function () {
     agent.turn(LEFT_TURN)
     for (let index = 0; index < 13; index++) {
         agent.move(FORWARD, 1)
+        // } else if (CodeCosmos.pickaxe_and_diamond_under_agent()) {
+        // CodeCosmos.collect_pickaxe_and_diamond()
         if (CodeCosmos.test_for_block_under_agent(STONE)) {
             CodeCosmos.place_podzol()
         } else if (CodeCosmos.test_for_block_under_agent(SAND)) {
@@ -204,6 +210,8 @@ player.onChat("level5", function () {
     agent.turn(LEFT_TURN)
     for (let index = 0; index < 9; index++) {
         agent.move(FORWARD, 1)
+        // } else if (CodeCosmos.pickaxe_and_diamond_under_agent()) {
+        // CodeCosmos.collect_pickaxe_and_diamond()
         if (CodeCosmos.test_for_block_under_agent(STONE)) {
             CodeCosmos.place_podzol()
         } else if (CodeCosmos.test_for_block_under_agent(SAND)) {
