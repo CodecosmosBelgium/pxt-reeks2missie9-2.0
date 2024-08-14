@@ -12,12 +12,10 @@ namespace CodeCosmos {
         let inspectedBlock = agent.inspect(AgentInspection.Block, DOWN);
         switch(inspectedBlock){
             case YELLOW_WOOL:
-                mobs.give(localPlayer, YELLOW_WOOL, 1);
                 agent.destroy(DOWN);
                 agent.collect(YELLOW_WOOL);
                 break;
             case RED_WOOL:
-                mobs.give(localPlayer, RED_WOOL, 1);
                 agent.destroy(DOWN);
                 agent.collect(RED_WOOL);
                 break;
