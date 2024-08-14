@@ -3,7 +3,7 @@
 # level 4
 ```blocks
 player.onChat("level4", function () {
-    CodeCosmos.setup_level4()
+    // CodeCosmos.setup_level4()
     for (let index = 0; index < 8; index++) {
         agent.move(FORWARD, 1)
         if (CodeCosmos.no_ironblock_under_agent() && CodeCosmos.next_to_tree()) {
@@ -15,9 +15,7 @@ player.onChat("level4", function () {
         } else if (CodeCosmos.test_for_block_under_agent(GRASS) && CodeCosmos.next_to_bush()) {
             CodeCosmos.spawn_ocelot()
         } else {
-            for (let index = 0; index < 4; index++) {
-                agent.turn(LEFT_TURN)
-            }
+            CodeCosmos.turn_360_degrees()
         }
     }
     agent.turn(LEFT_TURN)
@@ -32,9 +30,7 @@ player.onChat("level4", function () {
         } else if (CodeCosmos.test_for_block_under_agent(GRASS) && CodeCosmos.next_to_bush()) {
             CodeCosmos.spawn_ocelot()
         } else {
-            for (let index = 0; index < 4; index++) {
-                agent.turn(LEFT_TURN)
-            }
+            CodeCosmos.turn_360_degrees()
         }
     }
 })
@@ -42,7 +38,7 @@ player.onChat("level4", function () {
 
 ```template
 player.onChat("level4", function () {
-    CodeCosmos.setup_level4()
+    // CodeCosmos.setup_level4()
     for (let index = 0; index < 8; index++) {
         agent.move(FORWARD, 1)
         if (CodeCosmos.no_ironblock_under_agent() && CodeCosmos.next_to_tree()) {
@@ -54,9 +50,7 @@ player.onChat("level4", function () {
         } else if (CodeCosmos.test_for_block_under_agent(GRASS) && CodeCosmos.next_to_bush()) {
             CodeCosmos.spawn_ocelot()
         } else {
-            for (let index = 0; index < 4; index++) {
-                agent.turn(LEFT_TURN)
-            }
+            CodeCosmos.turn_360_degrees()
         }
     }
     agent.turn(LEFT_TURN)
@@ -71,9 +65,7 @@ player.onChat("level4", function () {
         } else if (CodeCosmos.test_for_block_under_agent(GRASS) && CodeCosmos.next_to_bush()) {
             CodeCosmos.spawn_ocelot()
         } else {
-            for (let index = 0; index < 4; index++) {
-                agent.turn(LEFT_TURN)
-            }
+            CodeCosmos.turn_360_degrees()
         }
     }
 })
