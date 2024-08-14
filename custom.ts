@@ -55,9 +55,10 @@ namespace CodeCosmos {
 
     //% block="Draai 360 graden"
     export function turn_360_degrees(): void{
-        for(let i = 0; i < 4; i++){
-            agent.turnLeft();
-        }
+        agent.turnLeft();
+        agent.turnLeft();
+        agent.turnLeft();
+        agent.turnLeft();
     }
 
     //% block="Geen ijzer block onder agent"
