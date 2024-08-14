@@ -53,6 +53,13 @@ namespace CodeCosmos {
         mobs.give(localPlayer, DIAMOND, 1);
     }
 
+    //% block="Draai 360 graden"
+    export function turn_360_degrees(): void{
+        for(let i = 0; i < 4; i++){
+            agent.turnLeft();
+        }
+    }
+
     //% block="Geen ijzer block onder agent"
     export function no_ironblock_under_agent(): boolean {
         let inspectedBlock = agent.inspect(AgentInspection.Block, DOWN);
