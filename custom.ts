@@ -32,16 +32,6 @@ namespace CodeCosmos {
         }
     }
 
-    //% block="Geen ijzer block onder agent"
-    export function no_ironblock_under_agent(): boolean{
-        let inspectedBlock = agent.inspect(AgentInspection.Block, DOWN);
-        if(inspectedBlock != IRON_BLOCK){
-            return true;
-        }else{
-            return false;
-        }
-    }
-
     //% block="Pickaxe en diamont onder agent"
     export function pickaxe_and_diamond_under_agent(): boolean{
         let inspectedBlock = agent.inspect(AgentInspection.Block, DOWN);
@@ -61,6 +51,16 @@ namespace CodeCosmos {
         agent.collect(PURPLE_WOOL);
         mobs.give(localPlayer, IRON_PICKAXE, 1);
         mobs.give(localPlayer, DIAMOND, 1);
+    }
+
+    //% block="Geen ijzer block onder agent"
+    export function no_ironblock_under_agent(): boolean {
+        let inspectedBlock = agent.inspect(AgentInspection.Block, DOWN);
+        if (inspectedBlock != IRON_BLOCK) {
+            return true;
+        } else {
+            return false;
+        }
     }
 
     //% block="is blok %block=block onder agent"
