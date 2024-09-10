@@ -18,13 +18,9 @@ player.onChat("level1", function () {
         }
         agent.turn(LEFT_TURN)
     }
-    for (let index = 0; index < 2; index++) {
-        agent.move(FORWARD, 1)
-    }
+    agent.move(FORWARD, 2)
     agent.turn(RIGHT_TURN)
-    for (let index = 0; index < 6; index++) {
-        agent.move(FORWARD, 1)
-    }
+    agent.move(FORWARD, 6)
 })
 
 ```
