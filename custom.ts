@@ -198,7 +198,7 @@ namespace CodeCosmos {
     export function setup_level2(): void {
         agent.setItem(JUNGLE_SAPLING, 64, 1);
         agent.setItem(SWEET_BERRIES, 64, 2);
-        agent.teleport(world(-111, 69, 272), 180);
+        agent.teleport(world(-111, 69, 272), 90);
     }
 
     //% block="Zet klaar"
