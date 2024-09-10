@@ -3,7 +3,7 @@
 # level 4
 ```blocks
 player.onChat("level4", function () {
-    // CodeCosmos.setup_level4()
+    CodeCosmos.setup_level4()
     for (let index = 0; index < 8; index++) {
         agent.move(FORWARD, 1)
         if (CodeCosmos.no_ironblock_under_agent() && CodeCosmos.next_to_tree()) {
@@ -38,7 +38,7 @@ player.onChat("level4", function () {
 
 ```template
 player.onChat("level4", function () {
-    // CodeCosmos.setup_level4()
+    CodeCosmos.setup_level4()
     
 })
 ```
