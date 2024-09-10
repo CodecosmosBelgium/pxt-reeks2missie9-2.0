@@ -7,16 +7,10 @@ player.onChat("level1", function () {
     for (let index = 0; index < 4; index++) {
         for (let index = 0; index < 2; index++) {
             agent.move(FORWARD, 1)
-            if (CodeCosmos.test_for_block_under_agent(GRASS)) {
-                CodeCosmos.place_flower()
-            }
         }
         agent.turn(RIGHT_TURN)
         for (let index = 0; index < 4; index++) {
             agent.move(FORWARD, 1)
-            if (CodeCosmos.test_for_block_under_agent(GRASS)) {
-                CodeCosmos.place_flower()
-            }
         }
         CodeCosmos.collect_tool()
         for (let index = 0; index < 2; index++) {
@@ -26,16 +20,10 @@ player.onChat("level1", function () {
     }
     for (let index = 0; index < 2; index++) {
         agent.move(FORWARD, 1)
-        if (CodeCosmos.test_for_block_under_agent(GRASS)) {
-            CodeCosmos.place_flower()
-        }
     }
     agent.turn(RIGHT_TURN)
     for (let index = 0; index < 6; index++) {
         agent.move(FORWARD, 1)
-        if (CodeCosmos.test_for_block_under_agent(GRASS)) {
-            CodeCosmos.place_flower()
-        }
     }
 })
 
