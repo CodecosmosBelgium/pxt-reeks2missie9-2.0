@@ -222,6 +222,6 @@ namespace CodeCosmos {
         agent.setItem(SPAWN_PARROT, 64, 2);
         agent.setItem(PODZOL, 64, 3);
         agent.setItem(STONE, 64, 4);
-        agent.teleport(world(-226, 65, 244), NORTH);
+        agent.teleport(world(-226, 65, 244), 270);
     }
 }
