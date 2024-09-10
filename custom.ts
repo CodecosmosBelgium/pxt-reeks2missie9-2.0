@@ -161,12 +161,6 @@ namespace CodeCosmos {
         agent.place(DOWN);
     }
 
-    //% block="Plant bloem"
-    export function place_flower(): void {
-        agent.setSlot(1);
-        agent.place(DOWN);
-    }
-
     //% block="Plant boom"
     export function place_tree(): void {
         agent.setSlot(1);
@@ -197,7 +191,6 @@ namespace CodeCosmos {
 
     //% block="Zet klaar"
     export function setup_level1(): void {
-        agent.setItem(BLUE_ORCHID, 64, 1);
         agent.teleport(world(-73, 69, 272), WEST);
     }
 

@@ -80,16 +80,10 @@ player.onChat("level1", function () {
     for (let index = 0; index < 4; index++) {
         for (let index = 0; index < 2; index++) {
             agent.move(FORWARD, 1)
-            if (CodeCosmos.test_for_block_under_agent(GRASS)) {
-                CodeCosmos.place_flower()
-            }
         }
         agent.turn(RIGHT_TURN)
         for (let index = 0; index < 4; index++) {
             agent.move(FORWARD, 1)
-            if (CodeCosmos.test_for_block_under_agent(GRASS)) {
-                CodeCosmos.place_flower()
-            }
         }
         CodeCosmos.collect_tool()
         for (let index = 0; index < 2; index++) {
@@ -97,19 +91,9 @@ player.onChat("level1", function () {
         }
         agent.turn(LEFT_TURN)
     }
-    for (let index = 0; index < 2; index++) {
-        agent.move(FORWARD, 1)
-        if (CodeCosmos.test_for_block_under_agent(GRASS)) {
-            CodeCosmos.place_flower()
-        }
-    }
+    agent.move(FORWARD, 2)
     agent.turn(RIGHT_TURN)
-    for (let index = 0; index < 6; index++) {
-        agent.move(FORWARD, 1)
-        if (CodeCosmos.test_for_block_under_agent(GRASS)) {
-            CodeCosmos.place_flower()
-        }
-    }
+    agent.move(FORWARD, 6)
 })
 player.onChat("level3", function () {
     CodeCosmos.setup_level3()
@@ -161,7 +145,6 @@ player.onChat("level5", function () {
     CodeCosmos.setup_level5()
     for (let index = 0; index < 2; index++) {
         agent.move(FORWARD, 1)
-        
         if (CodeCosmos.test_for_block_under_agent(STONE)) {
             CodeCosmos.place_podzol()
         } else if (CodeCosmos.test_for_block_under_agent(SAND)) {
@@ -170,14 +153,13 @@ player.onChat("level5", function () {
             CodeCosmos.spawn_panda()
         } else if (CodeCosmos.pickaxe_and_diamond_under_agent()) {
             CodeCosmos.collect_pickaxe_and_diamond()
-        }else if (CodeCosmos.pickaxe_and_diamond_under_agent()) {
-        CodeCosmos.collect_pickaxe_and_diamond()
+        } else if (CodeCosmos.pickaxe_and_diamond_under_agent()) {
+            CodeCosmos.collect_pickaxe_and_diamond()
         }
     }
     agent.turn(RIGHT_TURN)
     for (let index = 0; index < 9; index++) {
         agent.move(FORWARD, 1)
-        
         if (CodeCosmos.test_for_block_under_agent(STONE)) {
             CodeCosmos.place_podzol()
         } else if (CodeCosmos.test_for_block_under_agent(SAND)) {
@@ -186,15 +168,13 @@ player.onChat("level5", function () {
             CodeCosmos.spawn_panda()
         } else if (CodeCosmos.pickaxe_and_diamond_under_agent()) {
             CodeCosmos.collect_pickaxe_and_diamond()
-        }
-        else if (CodeCosmos.pickaxe_and_diamond_under_agent()) {
-        CodeCosmos.collect_pickaxe_and_diamond()
+        } else if (CodeCosmos.pickaxe_and_diamond_under_agent()) {
+            CodeCosmos.collect_pickaxe_and_diamond()
         }
     }
     agent.turn(LEFT_TURN)
     for (let index = 0; index < 13; index++) {
         agent.move(FORWARD, 1)
-        
         if (CodeCosmos.test_for_block_under_agent(STONE)) {
             CodeCosmos.place_podzol()
         } else if (CodeCosmos.test_for_block_under_agent(SAND)) {
@@ -210,7 +190,6 @@ player.onChat("level5", function () {
     agent.turn(LEFT_TURN)
     for (let index = 0; index < 9; index++) {
         agent.move(FORWARD, 1)
-        
         if (CodeCosmos.test_for_block_under_agent(STONE)) {
             CodeCosmos.place_podzol()
         } else if (CodeCosmos.test_for_block_under_agent(SAND)) {
@@ -219,8 +198,8 @@ player.onChat("level5", function () {
             CodeCosmos.spawn_panda()
         } else if (CodeCosmos.pickaxe_and_diamond_under_agent()) {
             CodeCosmos.collect_pickaxe_and_diamond()
-        }else if (CodeCosmos.pickaxe_and_diamond_under_agent()) {
-        CodeCosmos.collect_pickaxe_and_diamond()
+        } else if (CodeCosmos.pickaxe_and_diamond_under_agent()) {
+            CodeCosmos.collect_pickaxe_and_diamond()
         }
     }
 })
