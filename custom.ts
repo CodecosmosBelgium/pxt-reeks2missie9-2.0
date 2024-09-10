@@ -191,14 +191,14 @@ namespace CodeCosmos {
 
     //% block="Zet klaar"
     export function setup_level1(): void {
-        agent.teleport(world(-73, 69, 272), 180);
+        agent.teleport(world(-73, 69, 272), WEST);
     }
 
     //% block="Zet klaar"
     export function setup_level2(): void {
         agent.setItem(JUNGLE_SAPLING, 64, 1);
         agent.setItem(SWEET_BERRIES, 64, 2);
-        agent.teleport(world(-111, 69, 272), 90);
+        agent.teleport(world(-111, 69, 272), WEST);
     }
 
     //% block="Zet klaar"
@@ -206,14 +206,14 @@ namespace CodeCosmos {
         agent.setItem(SPAWN_PANDA, 64, 1);
         agent.setItem(SWEET_BERRIES, 64, 2);
         agent.setItem(COBBLESTONE, 64, 3);
-        agent.teleport(world(-133, 68, 265), 180);
+        agent.teleport(world(-133, 68, 265), WEST);
     }
 
     //% block="Zet klaar"
     export function setup_level4(): void {
         agent.setItem(SPAWN_OCELOT, 64, 1);
         agent.setItem(SPAWN_PARROT, 64, 2);
-        agent.teleport(world(-161, 62, 261), 180);
+        agent.teleport(world(-161, 62, 261), WEST);
     }
 
     //% block="Zet klaar"
@@ -222,6 +222,6 @@ namespace CodeCosmos {
         agent.setItem(SPAWN_PARROT, 64, 2);
         agent.setItem(PODZOL, 64, 3);
         agent.setItem(STONE, 64, 4);
-        agent.teleport(world(-226, 65, 244), 270);
+        agent.teleport(world(-226, 65, 244), NORTH);
     }
 }
