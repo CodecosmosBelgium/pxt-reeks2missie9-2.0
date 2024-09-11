@@ -37,16 +37,15 @@ player.onChat("level3", function () {
         }
     }
     agent.turn(LEFT_TURN)
-    for (let index = 0; index < 2; index++) {
-        agent.move(FORWARD, 1)
-        if (CodeCosmos.test_for_block_under_agent(GRASS) && CodeCosmos.next_to_bamboo_plant()) {
-            CodeCosmos.spawn_panda()
-        } else if (CodeCosmos.test_for_block_under_agent(MAGMA_BLOCK)) {
-            CodeCosmos.place_cobblestone()
-        } else {
-            CodeCosmos.place_bush()
-        }
+    agent.move(FORWARD, 1)
+    if (CodeCosmos.test_for_block_under_agent(GRASS) && CodeCosmos.next_to_bamboo_plant()) {
+        CodeCosmos.spawn_panda()
+    } else if (CodeCosmos.test_for_block_under_agent(MAGMA_BLOCK)) {
+        CodeCosmos.place_cobblestone()
+    } else {
+        CodeCosmos.place_bush()
     }
+    agent.move(FORWARD, 1)
 })
 
 ```
@@ -87,16 +86,15 @@ player.onChat("level3", function () {
         }
     }
     agent.turn(LEFT_TURN)
-    for (let index = 0; index < 2; index++) {
-        agent.move(FORWARD, 1)
-        if (CodeCosmos.test_for_block_under_agent(GRASS) && CodeCosmos.next_to_bamboo_plant()) {
-            CodeCosmos.spawn_panda()
-        } else if (CodeCosmos.test_for_block_under_agent(MAGMA_BLOCK)) {
-            CodeCosmos.place_cobblestone()
-        } else {
-            CodeCosmos.place_bush()
-        }
+    agent.move(FORWARD, 1)
+    if (CodeCosmos.test_for_block_under_agent(GRASS) && CodeCosmos.next_to_bamboo_plant()) {
+        CodeCosmos.spawn_panda()
+    } else if (CodeCosmos.test_for_block_under_agent(MAGMA_BLOCK)) {
+        CodeCosmos.place_cobblestone()
+    } else {
+        CodeCosmos.place_bush()
     }
+    agent.move(FORWARD, 1)
 })
 ```
 
