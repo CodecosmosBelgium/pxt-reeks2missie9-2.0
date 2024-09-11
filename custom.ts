@@ -77,24 +77,13 @@ namespace CodeCosmos {
         return blocks.testForBlock(block, agent.getPosition().add(world(0, -1, 0)))
     }
     
-    //% block="Bamboo plant naast agent"
+    //% block="Bamboo naast agent"
     export function next_to_bamboo_plant(): boolean {
         let inspectedLeftBlock = agent.inspect(AgentInspection.Block, LEFT);
         let inspectedRightBlock = agent.inspect(AgentInspection.Block, RIGHT);
         if(inspectedLeftBlock == BAMBOO || inspectedRightBlock == BAMBOO){
             return true;
         }else{
-            return false;
-        }
-    }
-
-    //% block="Bamboo block naast agent"
-    export function next_to_bamboo_block(): boolean {
-        let inspectedLeftBlock = agent.inspect(AgentInspection.Block, LEFT);
-        let inspectedRightBlock = agent.inspect(AgentInspection.Block, RIGHT);
-        if (inspectedLeftBlock == BLOCK_OF_BAMBOO || inspectedRightBlock == BLOCK_OF_BAMBOO) {
-            return true;
-        } else {
             return false;
         }
     }
