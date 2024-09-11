@@ -7,14 +7,12 @@ player.onChat("level2", function () {
         } else {
             CodeCosmos.place_bush()
         }
-        agent.turn(RIGHT_TURN)
-        agent.move(FORWARD, 1)
+        agent.move(RIGHT, 1)
         if (CodeCosmos.test_for_block_under_agent(GRASS) || CodeCosmos.test_for_block_under_agent(PODZOL)) {
             CodeCosmos.place_tree()
         } else {
             CodeCosmos.place_bush()
         }
-        agent.turn(LEFT_TURN)
     }
     for (let index = 0; index < 6; index++) {
         agent.move(FORWARD, 1)
