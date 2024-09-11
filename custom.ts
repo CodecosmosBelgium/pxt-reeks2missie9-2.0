@@ -196,8 +196,6 @@ namespace CodeCosmos {
 
     //% block="Zet klaar"
     export function setup_level2(): void {
-        let redstoneBlockPos = pos(-133, 68, 281);
-        blocks.place(REDSTONE_BLOCK, redstoneBlockPos)
         agent.setItem(JUNGLE_SAPLING, 64, 1);
         agent.setItem(SWEET_BERRIES, 64, 2);
         agent.teleport(world(-111, 69, 272), WEST);
@@ -205,6 +203,8 @@ namespace CodeCosmos {
 
     //% block="Zet klaar"
     export function setup_level3(): void {
+        let redstoneBlockPos = pos(-133, 68, 281);
+        blocks.place(REDSTONE_BLOCK, redstoneBlockPos)
         agent.setItem(SPAWN_PANDA, 64, 1);
         agent.setItem(SWEET_BERRIES, 64, 2);
         agent.setItem(COBBLESTONE, 64, 3);
