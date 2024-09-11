@@ -32,7 +32,7 @@ namespace CodeCosmos {
         }
     }
 
-    //% block="Pickaxe en diamont onder agent"
+    //% block="Pikhouweel en diamont onder agent"
     export function pickaxe_and_diamond_under_agent(): boolean{
         let inspectedBlock = agent.inspect(AgentInspection.Block, DOWN);
         if(inspectedBlock == PURPLE_WOOL){
@@ -42,7 +42,7 @@ namespace CodeCosmos {
         }
     }
 
-    //% block="Raap pickaxe en diamant op"
+    //% block="Raap pikhouweel en diamant op"
     export function collect_pickaxe_and_diamond(): void {
         let localPlayer = mobs.target(TargetSelectorKind.LocalPlayer);
         agent.destroy(DOWN);

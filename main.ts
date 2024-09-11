@@ -192,8 +192,6 @@ player.onChat("level5", function () {
             CodeCosmos.spawn_panda()
         } else if (CodeCosmos.pickaxe_and_diamond_under_agent()) {
             CodeCosmos.collect_pickaxe_and_diamond()
-        } else if (CodeCosmos.pickaxe_and_diamond_under_agent()) {
-            CodeCosmos.collect_pickaxe_and_diamond()
         }
     }
     agent.turn(RIGHT_TURN)
