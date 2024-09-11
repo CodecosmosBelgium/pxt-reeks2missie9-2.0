@@ -36,14 +36,13 @@ player.onChat("level2", function () {
         }
     }
     agent.turn(LEFT_TURN)
-    for (let index = 0; index < 3; index++) {
-        agent.move(FORWARD, 1)
-        if (CodeCosmos.test_for_block_under_agent(GRASS) || CodeCosmos.test_for_block_under_agent(PODZOL)) {
-            CodeCosmos.place_tree()
-        } else {
-            CodeCosmos.place_bush()
-        }
+    agent.move(FORWARD, 1)
+    if (CodeCosmos.test_for_block_under_agent(GRASS) || CodeCosmos.test_for_block_under_agent(PODZOL)) {
+        CodeCosmos.place_tree()
+    } else {
+        CodeCosmos.place_bush()
     }
+    agent.move(FORWARD, 1)
 })
 
 ```
@@ -83,14 +82,13 @@ player.onChat("level2", function () {
         }
     }
     agent.turn(LEFT_TURN)
-    for (let index = 0; index < 3; index++) {
-        agent.move(FORWARD, 1)
-        if (CodeCosmos.test_for_block_under_agent(GRASS) || CodeCosmos.test_for_block_under_agent(PODZOL)) {
-            CodeCosmos.place_tree()
-        } else {
-            CodeCosmos.place_bush()
-        }
+    agent.move(FORWARD, 1)
+    if (CodeCosmos.test_for_block_under_agent(GRASS) || CodeCosmos.test_for_block_under_agent(PODZOL)) {
+        CodeCosmos.place_tree()
+    } else {
+        CodeCosmos.place_bush()
     }
+    agent.move(FORWARD, 1)
 })
 
 ```
