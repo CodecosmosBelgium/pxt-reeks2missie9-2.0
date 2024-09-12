@@ -192,7 +192,6 @@ namespace CodeCosmos {
 
     //% block="Zet klaar"
     export function setup_level3(): void {
-        blocks.place(REDSTONE_BLOCK, positions.create(-133, 68, 281))
         agent.setItem(SPAWN_PANDA, 64, 1);
         agent.setItem(SWEET_BERRIES, 64, 2);
         agent.setItem(COBBLESTONE, 64, 3);
