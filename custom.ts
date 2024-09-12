@@ -6,7 +6,7 @@ player.execute("/scriptevent cc:getId " + mobs.queryTarget((mobs.target(MY_AGENT
 //% color=190 weight=100 block="CodeCosmos"
 namespace CodeCosmos {
 
-    //% block="Raap gereedschap onder de agent op"
+    //% block="Raap gereedschap onder agent op"
     export function collect_tool(): void {
         let localPlayer = mobs.target(TargetSelectorKind.LocalPlayer);
         let inspectedBlock = agent.inspect(AgentInspection.Block, DOWN);
@@ -162,7 +162,7 @@ namespace CodeCosmos {
         agent.place(DOWN);
     }
 
-    //% block="Plaats keisteen"
+    //% block="Vervang blok onder agent door keisteen"
     export function place_cobblestone(): void {
         agent.destroy(DOWN);
         agent.setSlot(3);
@@ -170,7 +170,7 @@ namespace CodeCosmos {
         agent.collect(MAGMA_BLOCK);
     }
 
-    //% block="Plaats podzol"
+    //% block="Vervang blok onder agent door podzol"
     export function place_podzol(): void {
         agent.destroy(DOWN);
         agent.setSlot(3);
