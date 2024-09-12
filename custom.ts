@@ -6,7 +6,7 @@ player.execute("/scriptevent cc:getId " + mobs.queryTarget((mobs.target(MY_AGENT
 //% color=190 weight=100 block="CodeCosmos"
 namespace CodeCosmos {
 
-    //% block="Raap gereedschap onder agent op"
+    //% block="Collect tool under agent"
     export function collect_tool(): void {
         let localPlayer = mobs.target(TargetSelectorKind.LocalPlayer);
         let inspectedBlock = agent.inspect(AgentInspection.Block, DOWN);
@@ -32,7 +32,7 @@ namespace CodeCosmos {
         }
     }
 
-    //% block="Pikhouweel en diamont onder agent"
+    //% block="Pickaxe and diamond under agent"
     export function pickaxe_and_diamond_under_agent(): boolean{
         let inspectedBlock = agent.inspect(AgentInspection.Block, DOWN);
         if(inspectedBlock == PURPLE_WOOL){
@@ -42,7 +42,7 @@ namespace CodeCosmos {
         }
     }
 
-    //% block="Raap pikhouweel en diamant op"
+    //% block="Collect pickaxe and diamond"
     export function collect_pickaxe_and_diamond(): void {
         let localPlayer = mobs.target(TargetSelectorKind.LocalPlayer);
         agent.destroy(DOWN);
@@ -53,7 +53,7 @@ namespace CodeCosmos {
         mobs.give(localPlayer, DIAMOND, 1);
     }
 
-    //% block="Draai 360 graden"
+    //% block="Turn 360 degrees"
     export function turn_360_degrees(): void{
         agent.turnLeft();
         agent.turnLeft();
@@ -61,7 +61,7 @@ namespace CodeCosmos {
         agent.turnLeft();
     }
 
-    //% block="Geen ijzer block onder agent"
+    //% block="No ironblock under agent"
     export function no_ironblock_under_agent(): boolean {
         let inspectedBlock = agent.inspect(AgentInspection.Block, DOWN);
         if (inspectedBlock != IRON_BLOCK) {
@@ -71,14 +71,14 @@ namespace CodeCosmos {
         }
     }
 
-    //% block="is blok %block=block onder agent"
+    //% block="Is block %block=block under agent"
     //% block.shadow=minecraftBlock
     export function test_for_block_under_agent(block: number): boolean {
         return blocks.testForBlock(block, agent.getPosition().add(world(0, -1, 0)))
     }
     
-    //% block="Bamboo naast agent"
-    export function next_to_bamboo_plant(): boolean {
+    //% block="Bamboo next to agent"
+    export function next_to_bamboo(): boolean {
         let inspectedLeftBlock = agent.inspect(AgentInspection.Block, LEFT);
         let inspectedRightBlock = agent.inspect(AgentInspection.Block, RIGHT);
         if(inspectedLeftBlock == BAMBOO || inspectedRightBlock == BAMBOO){
@@ -88,7 +88,7 @@ namespace CodeCosmos {
         }
     }
 
-    //% block="Struik naast agent"
+    //% block="Bush next to agent"
     export function next_to_bush(): boolean {
         let inspectedLeftBlock = agent.inspect(AgentInspection.Block, LEFT);
         let inspectedRightBlock = agent.inspect(AgentInspection.Block, RIGHT);
@@ -99,7 +99,7 @@ namespace CodeCosmos {
         }
     }
 
-    //% block="Boom naast agent"
+    //% block="Tree next to agent"
     export function next_to_tree(): boolean {
         let inspectedLeftBlock = agent.inspect(AgentInspection.Block, LEFT);
         let inspectedRightBlock = agent.inspect(AgentInspection.Block, RIGHT);
@@ -112,7 +112,7 @@ namespace CodeCosmos {
         }
     }
 
-    //% block="Hekken voor agent"
+    //% block="Fence in front of agent"
     export function fence_infrontof_agent(): boolean {
         let inspectedBlock = agent.inspect(AgentInspection.Block, FORWARD);
         if(inspectedBlock == JUNGLE_FENCE){
@@ -122,7 +122,7 @@ namespace CodeCosmos {
         }
     }
 
-    //% block="Fakkel voor agent"
+    //% block="Torch in front of agent"
     export function torch_infrontof_agent(): boolean {
         let inspectedBlock = agent.inspect(AgentInspection.Block, FORWARD);
         if (inspectedBlock == TORCH) {
@@ -138,7 +138,7 @@ namespace CodeCosmos {
         agent.place(DOWN);
     }
 
-    //% block="Spawn papegaai"
+    //% block="Spawn parrot"
     export function spawn_parrot(): void {
         agent.setSlot(2);
         agent.place(DOWN);
@@ -150,19 +150,19 @@ namespace CodeCosmos {
         agent.place(DOWN);
     }
 
-    //% block="Plant boom"
+    //% block="Plant tree"
     export function place_tree(): void {
         agent.setSlot(1);
         agent.place(DOWN);
     }
 
-    //% block="Plant struik"
+    //% block="Plant bush"
     export function place_bush(): void {
         agent.setSlot(2);
         agent.place(DOWN);
     }
 
-    //% block="Vervang blok onder agent door keisteen"
+    //% block="Replace block under agent with cobblestone"
     export function place_cobblestone(): void {
         agent.destroy(DOWN);
         agent.setSlot(3);
@@ -170,7 +170,7 @@ namespace CodeCosmos {
         agent.collect(MAGMA_BLOCK);
     }
 
-    //% block="Vervang blok onder agent door podzol"
+    //% block="Replace block under agent with podzol"
     export function place_podzol(): void {
         agent.destroy(DOWN);
         agent.setSlot(3);
@@ -178,19 +178,19 @@ namespace CodeCosmos {
         agent.collect(COBBLESTONE);
     }
 
-    //% block="Zet klaar"
+    //% block="Setup"
     export function setup_level1(): void {
         agent.teleport(world(-73, 69, 272), WEST);
     }
 
-    //% block="Zet klaar"
+    //% block="Setup"
     export function setup_level2(): void {
         agent.setItem(JUNGLE_SAPLING, 64, 1);
         agent.setItem(SWEET_BERRIES, 64, 2);
         agent.teleport(world(-111, 69, 272), WEST);
     }
 
-    //% block="Zet klaar"
+    //% block="Setup"
     export function setup_level3(): void {
         agent.setItem(SPAWN_PANDA, 64, 1);
         agent.setItem(SWEET_BERRIES, 64, 2);
@@ -198,14 +198,14 @@ namespace CodeCosmos {
         agent.teleport(world(-133, 68, 265), WEST);
     }
 
-    //% block="Zet klaar"
+    //% block="Setup"
     export function setup_level4(): void {
         agent.setItem(SPAWN_OCELOT, 64, 1);
         agent.setItem(SPAWN_PARROT, 64, 2);
         agent.teleport(world(-161, 62, 261), WEST);
     }
 
-    //% block="Zet klaar"
+    //% block="Setup"
     export function setup_level5(): void {
         agent.setItem(SPAWN_PANDA, 64, 1);
         agent.setItem(SPAWN_PARROT, 64, 2);
