@@ -3,7 +3,7 @@
   "CodeCosmos.pickaxe_and_diamond_under_agent|block": "Pikhouweel en diamont onder agent",
   "CodeCosmos.collect_pickaxe_and_diamond|block": "Raap pikhouweel en diamant op",
   "CodeCosmos.turn_360_degrees|block": "Draai 360 graden",
-  "CodeCosmos.no_iron_block_under_agent|block": "Geen ijzer block onder agent",
+  "CodeCosmos.no_ironblock_under_agent|block": "Geen ijzer block onder agent",
   "CodeCosmos.test_for_block_under_agent|block": "Is blok %block=block onder agent",
   "CodeCosmos.next_to_bamboo|block": "Bamboe naast agent",
   "CodeCosmos.next_to_bush|block": "Struik naast agent",
