@@ -14,21 +14,32 @@ namespace CodeCosmos {
             case YELLOW_WOOL:
                 agent.destroy(DOWN);
                 agent.collect(YELLOW_WOOL);
+                agent.setSlot(1);
+                agent.place(DOWN);
                 break;
             case RED_WOOL:
                 agent.destroy(DOWN);
                 agent.collect(RED_WOOL);
+                agent.setSlot(1);
+                agent.place(DOWN);
                 break;
             case GREEN_WOOL:
                 mobs.give(localPlayer, IRON_SHOVEL, 1);
                 agent.destroy(DOWN);
                 agent.collect(GREEN_WOOL);
+                agent.setSlot(1);
+                agent.place(DOWN);
                 break;
             case BLUE_WOOL:
                 mobs.give(localPlayer, IRON_HOE, 1);
                 agent.destroy(DOWN);
                 agent.collect(BLUE_WOOL);
+                agent.setSlot(1);
+                agent.place(DOWN);
                 break;
+            case GRASS:
+                agent.destroy(DOWN);
+
         }
     }
 
@@ -181,6 +192,7 @@ namespace CodeCosmos {
     //% block="Setup"
     export function setup_level1(): void {
         agent.teleport(world(-73, 69, 272), WEST);
+        agent.setItem(STONE, 64, 1);
     }
 
     //% block="Setup"
