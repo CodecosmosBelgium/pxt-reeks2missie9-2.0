@@ -39,7 +39,6 @@ namespace CodeCosmos {
                 break;
             case GRASS:
                 agent.destroy(DOWN);
-
         }
     }
 
