@@ -37,8 +37,6 @@ namespace CodeCosmos {
                 agent.setSlot(1);
                 agent.place(DOWN);
                 break;
-            case GRASS:
-                agent.destroy(DOWN);
         }
     }
 
