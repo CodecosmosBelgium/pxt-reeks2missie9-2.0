@@ -201,37 +201,40 @@ namespace CodeCosmos {
 
     //% block="Setup"
     export function setup_level3(): void {
-        agent.teleport(world(-73, 69, 281), WEST);
-        agent.setItem(REDSTONE_BLOCK, 1, 4);
+        agent.teleport(world(-132, 69, 286), EAST);
+        agent.setItem(REDSTONE_BLOCK, 2, 4);
         agent.setSlot(4);
-        agent.place(DOWN);
+        agent.place(FORWARD);
+        agent.teleport(world(-135, 69, 286), EAST);
+        agent.setSlot(4);
+        agent.place(FORWARD);
+        agent.teleport(world(-133, 68, 265), WEST);
         agent.setItem(SPAWN_PANDA, 64, 1);
         agent.setItem(SWEET_BERRIES, 64, 2);
         agent.setItem(COBBLESTONE, 64, 3);
-        agent.teleport(world(-133, 68, 265), WEST);
     }
 
     //% block="Setup"
     export function setup_level4(): void {
-        agent.teleport(world(-163, 68, 291), WEST);
+        agent.teleport(world(-162, 67, 291), WEST);
         agent.setItem(REDSTONE_BLOCK, 1, 4);
         agent.setSlot(4);
-        agent.place(DOWN);
+        agent.place(FORWARD);
+        agent.teleport(world(-161, 62, 261), WEST);
         agent.setItem(SPAWN_OCELOT, 64, 1);
         agent.setItem(SPAWN_PARROT, 64, 2);
-        agent.teleport(world(-161, 62, 261), WEST);
     }
 
     //% block="Setup"
     export function setup_level5(): void {
-        agent.teleport(world(-255, 68, 246), WEST);
+        agent.teleport(world(-255, 68, 246), SOUTH);
         agent.setItem(REDSTONE_BLOCK, 1, 5);
         agent.setSlot(4);
-        agent.place(DOWN);
+        agent.place(FORWARD);
+        agent.teleport(world(-226, 65, 244), NORTH);
         agent.setItem(SPAWN_PANDA, 64, 1);
         agent.setItem(SPAWN_PARROT, 64, 2);
         agent.setItem(PODZOL, 64, 3);
         agent.setItem(STONE, 64, 4);
-        agent.teleport(world(-226, 65, 244), NORTH);
     }
 }
