@@ -14,20 +14,28 @@ namespace CodeCosmos {
             case YELLOW_WOOL:
                 agent.destroy(DOWN);
                 agent.collect(YELLOW_WOOL);
+                agent.setSlot(1);
+                agent.place(DOWN);
                 break;
             case RED_WOOL:
                 agent.destroy(DOWN);
                 agent.collect(RED_WOOL);
+                agent.setSlot(1);
+                agent.place(DOWN);
                 break;
             case GREEN_WOOL:
                 mobs.give(localPlayer, IRON_SHOVEL, 1);
                 agent.destroy(DOWN);
                 agent.collect(GREEN_WOOL);
+                agent.setSlot(1);
+                agent.place(DOWN);
                 break;
             case BLUE_WOOL:
                 mobs.give(localPlayer, IRON_HOE, 1);
                 agent.destroy(DOWN);
                 agent.collect(BLUE_WOOL);
+                agent.setSlot(1);
+                agent.place(DOWN);
                 break;
         }
     }
@@ -181,6 +189,7 @@ namespace CodeCosmos {
     //% block="Setup"
     export function setup_level1(): void {
         agent.teleport(world(-73, 69, 272), WEST);
+        agent.setItem(STONE, 64, 1);
     }
 
     //% block="Setup"
@@ -192,6 +201,10 @@ namespace CodeCosmos {
 
     //% block="Setup"
     export function setup_level3(): void {
+        agent.teleport(world(-73, 69, 281), WEST);
+        agent.setItem(REDSTONE_BLOCK, 1, 4);
+        agent.setSlot(4);
+        agent.place(DOWN);
         agent.setItem(SPAWN_PANDA, 64, 1);
         agent.setItem(SWEET_BERRIES, 64, 2);
         agent.setItem(COBBLESTONE, 64, 3);
@@ -200,6 +213,10 @@ namespace CodeCosmos {
 
     //% block="Setup"
     export function setup_level4(): void {
+        agent.teleport(world(-163, 68, 291), WEST);
+        agent.setItem(REDSTONE_BLOCK, 1, 4);
+        agent.setSlot(4);
+        agent.place(DOWN);
         agent.setItem(SPAWN_OCELOT, 64, 1);
         agent.setItem(SPAWN_PARROT, 64, 2);
         agent.teleport(world(-161, 62, 261), WEST);
@@ -207,6 +224,10 @@ namespace CodeCosmos {
 
     //% block="Setup"
     export function setup_level5(): void {
+        agent.teleport(world(-255, 68, 246), WEST);
+        agent.setItem(REDSTONE_BLOCK, 1, 5);
+        agent.setSlot(4);
+        agent.place(DOWN);
         agent.setItem(SPAWN_PANDA, 64, 1);
         agent.setItem(SPAWN_PARROT, 64, 2);
         agent.setItem(PODZOL, 64, 3);
