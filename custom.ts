@@ -227,7 +227,7 @@ namespace CodeCosmos {
 
     //% block="Setup"
     export function setup_level5(): void {
-        agent.teleport(world(-255, 68, 246), SOUTH);
+        agent.teleport(world(-255, 67, 246), SOUTH);
         agent.setItem(REDSTONE_BLOCK, 1, 5);
         agent.setSlot(4);
         agent.place(FORWARD);
