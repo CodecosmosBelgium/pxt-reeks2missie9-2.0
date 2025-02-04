@@ -78,6 +78,7 @@ player.onChat("level2", function () {
 ```template
 player.onChat("level2", function () {
     CodeCosmos.setup_level3()
+    CodeCosmos.spawn_panda()
     
 })
 ```
