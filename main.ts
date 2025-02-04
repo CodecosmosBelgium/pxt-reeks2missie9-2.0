@@ -115,23 +115,27 @@ player.onChat("level4", function () {
 })
 player.onChat("level1", function () {
     CodeCosmos.setup_level1()
+    for (let index = 0; index < 2; index++) {
+        agent.move(FORWARD, 1)
+    }
+    agent.turn(RIGHT_TURN)
     for (let index = 0; index < 4; index++) {
+        agent.move(FORWARD, 1)
+    }
+    CodeCosmos.collect_tool()
+    for (let index = 0; index < 3; index++) {
+        agent.turn(LEFT_TURN)
         for (let index = 0; index < 2; index++) {
             agent.move(FORWARD, 1)
         }
         agent.turn(RIGHT_TURN)
-        for (let index = 0; index < 4; index++) {
-            agent.move(FORWARD, 1)
-        }
+        agent.move(FORWARD, 2)
         CodeCosmos.collect_tool()
-        for (let index = 0; index < 2; index++) {
-            agent.move(BACK, 1)
-        }
-        agent.turn(LEFT_TURN)
     }
+    agent.turn(LEFT_TURN)
     agent.move(FORWARD, 2)
     agent.turn(RIGHT_TURN)
-    agent.move(FORWARD, 6)
+    agent.move(FORWARD, 4)
 })
 player.onChat("level3", function () {
     CodeCosmos.setup_level3()
