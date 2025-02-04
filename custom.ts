@@ -197,6 +197,7 @@ namespace CodeCosmos {
         agent.setItem(JUNGLE_SAPLING, 64, 1);
         agent.setItem(SWEET_BERRIES, 64, 2);
         agent.setItem(REDSTONE_BLOCK, 1, 3);
+        agent.setItem(COBBLESTONE, 64, 4);
         agent.setSlot(3);
         agent.teleport(world(-109, 71, 282), WEST);
         agent.place(DOWN);
