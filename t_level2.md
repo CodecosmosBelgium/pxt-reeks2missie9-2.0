@@ -3,7 +3,7 @@
 # level 2
 ```blocks
 player.onChat("level2", function () {
-    CodeCosmos.setup_level2()
+    CodeCosmos.setup_level3()
     CodeCosmos.spawn_panda()
     agent.turn(RIGHT_TURN)
     for (let index = 0; index < 6; index++) {
@@ -77,7 +77,7 @@ player.onChat("level2", function () {
 
 ```template
 player.onChat("level2", function () {
-    CodeCosmos.setup_level2()
+    CodeCosmos.setup_level3()
     
 })
 ```
