@@ -220,10 +220,10 @@ namespace CodeCosmos {
 
     //% block="Setup"
     export function setup_level4(): void {
-        agent.teleport(world(-162, 67, 291), WEST);
+        agent.teleport(world(-163, 66, 291), WEST);
         agent.setItem(REDSTONE_BLOCK, 1, 4);
         agent.setSlot(4);
-        agent.place(FORWARD);
+        agent.place(DOWN);
         agent.teleport(world(-161, 62, 261), WEST);
         agent.setItem(SPAWN_OCELOT, 64, 1);
         agent.setItem(SPAWN_PARROT, 64, 2);
@@ -231,10 +231,10 @@ namespace CodeCosmos {
 
     //% block="Setup"
     export function setup_level5(): void {
-        agent.teleport(world(-255, 67, 246), SOUTH);
+        agent.teleport(world(-226, 65, 244), SOUTH);
         agent.setItem(REDSTONE_BLOCK, 1, 5);
         agent.setSlot(4);
-        agent.place(FORWARD);
+        agent.place(DOWN);
         agent.teleport(world(-226, 65, 244), NORTH);
         agent.setItem(SPAWN_PANDA, 64, 1);
         agent.setItem(SPAWN_PARROT, 64, 2);
