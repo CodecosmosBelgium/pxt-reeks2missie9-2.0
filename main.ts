@@ -1,5 +1,6 @@
 player.onChat("level2", function () {
     CodeCosmos.setup_level2()
+    CodeCosmos.spawn_panda()
     agent.turn(RIGHT_TURN)
     for (let index = 0; index < 6; index++) {
         agent.move(FORWARD, 1)
